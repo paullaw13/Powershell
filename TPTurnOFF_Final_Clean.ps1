@@ -2,7 +2,7 @@
 $clientid = "[YOUR CLIENT ID]"
 
 # Put in your Client Secret from Central
-$clientsecret = "[YOUR TENANT ID]"
+$clientsecret = "[YOUR CLIENT SECRET]"
 
 # URI to authenticate with Central
 $authuri = "https://id.sophos.com/api/v2/oauth2/token"
@@ -25,7 +25,7 @@ $bearer = $auth.access_token
 
 $header = @{ 
 Authorization = "Bearer $($bearer)"
-'X-Tenant-ID' = "[YOUR TENANT ID"
+'X-Tenant-ID' = "[YOUR TENANT ID]"
 }
 
 # uri to list out machines where Tamper Protection is enabled
